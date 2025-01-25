@@ -1,0 +1,213 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Itim&family=Lexend+Giga:wght@100..900&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Lexend Giga", serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: black;
+    color: #f4f4f9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f1c40f;
+    letter-spacing: 2px;
+}
+
+.navbar .btn {
+    background: #f1c40f;
+    color: #111;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.navbar .btn:hover {
+    background: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(45deg, #f1c40f, #111);
+    color: #fff;
+    border-bottom: 4px solid #f1c40f;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.hero .hero-btn {
+    background: #f1c40f;
+    color: #111;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+.hero .hero-btn:hover {
+    background: #f39c12;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #1e1e1e;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #f1c40f;
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    background: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #f1c40f;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Cybersecurity News Section */
+.cyber-news {
+    padding: 4rem 2rem;
+    background: #000;
+    color: #f1c40f;
+    text-align: center;
+    border-top: 4px solid #f1c40f;
+}
+
+.cyber-news h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #f1c40f;
+    font-weight: 700;
+}
+
+.cyber-news p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #f1c40f;
+}
+
+.feature .btn{
+    background: rgb(167, 158, 158);
+    color: #111;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+.cyber-news .btn {
+    background: #f1c40f;
+    color: #111;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+.cyber-news .btn:hover {
+    background: #f39c12;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #111;
+    color: #f4f4f9;
+    margin-top: 3rem;
+    font-weight: 300;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
